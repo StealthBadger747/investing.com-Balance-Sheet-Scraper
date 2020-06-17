@@ -47,7 +47,7 @@ def extract_from_URL(url: str) -> list:
 
     # iterator is needed to get each date
     iterator = 0
-    for quarter,  in balance_sheet:
+    for quarter in balance_sheet:
         quarter["Date Tuple"] = date_match[iterator]
         quarter["Date"] = date_match[iterator][1] + '/' + date_match[iterator][0]
         iterator += 1
